@@ -1,0 +1,16 @@
+/* COLORS */
+/* BACKGROUNDS */
+.bg-main {
+  background: #F0ECEC;
+}
+.bg-grey {
+  background-color: #707070;
+}
+/* TEXT */
+.text-grey{
+  color: #707070
+}
+
+.bordered{
+  border: 2px solid #707070;
+}

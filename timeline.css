@@ -1,0 +1,188 @@
+ *{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+ }
+  .timeline-wrap {
+    width: 30vh;
+    margin: 5vh auto;
+    /* padding: 5vh; */
+    height: 80vh;
+    /* animation: bounceIn 1s ease-in-out; */
+  }
+  .timeline-wrap .timeline {
+    display: flex;
+    justify-content: center;
+    width: 4px;
+    border-radius: 2px;
+    position: relative;
+    height: 100%;
+    margin: auto;
+    /* background: grey; */
+    display: block;
+    /* box-shadow: 3px 3px 0px #8d5b2f; */
+    /* animation: drawLine 1s ease-in-out;
+    animation-delay: 1.2s;
+    animation-fill-mode: forwards; */
+  }
+  /* .timeline-wrap .timeline .item{
+    padding: 50px;
+  } */
+  .timeline-wrap .timeline .item-1 {
+    position: absolute;
+    top: 0%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: -18px;
+    background: #fff;
+    display: inline-block;
+    /* margin-top: 2vh; */
+    /* opacity: 0; */
+    /* border: 2px solid black; */
+    /* box-shadow: 3px 3px 3px #8d5b2f; */
+  }
+  .timeline-wrap .timeline .item-2 {
+    position: absolute;
+    top: 25%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: -18px;
+    background: #fff;
+    display: inline-block;
+    /* margin-top: 2vh; */
+    /* opacity: 0;
+    animation: fadeIn 1s ease-in-out;
+    animation-delay: 2.2s;
+    animation-fill-mode: forwards; */
+    /* border: 2px solid black; */
+    /* box-shadow: 3px 3px 0px #8d5b2f; */
+  }
+  .timeline-wrap .timeline .item-3 {
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: -18px;
+    background: #fff;
+    display: inline-block;
+    /* margin-top: 2vh; */
+    /* opacity: 0;
+    animation: fadeIn 1s ease-in-out;
+    animation-delay: 3.2s;
+    animation-fill-mode: forwards; */
+    /* border: 2px solid black; */
+    /* box-shadow: 3px 3px 0px #8d5b2f; */
+  }
+  .timeline-wrap .timeline .item-4 {
+    position: absolute;
+    top: 75%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: -18px;
+    background: #fff;
+    display: inline-block;
+    /* margin-top: 2vh; */
+    /* opacity: 0;
+    animation: fadeIn 1s ease-in-out;
+    animation-delay: 4.2s;
+    animation-fill-mode: forwards; */
+    /* border: 2px solid black; */
+    /* box-shadow: 3px 3px 0px #8d5b2f; */
+  }
+  .timeline-wrap .timeline .item-5 {
+    position: absolute;
+    top: 100%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: -18px;
+    background: #fff;
+    display: inline-block;
+    /* margin-top: 2vh; */
+    /* opacity: 0;
+    animation: fadeIn 1s ease-in-out;
+    animation-delay: 4.2s;
+    animation-fill-mode: forwards; */
+    /* border: 2px solid black; */
+    /* box-shadow: 3px 3px 0px #8d5b2f; */
+  }
+  .text{
+    display: flex;
+    justify-content: center;
+    margin-left: -128px;
+    /* border: 1px solid red; */
+    margin-top: 8px;
+  }
+  .text-1{
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out;
+    animation-delay: 1.2s;
+    animation-fill-mode: forwards;
+  }
+  .text-2{
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out;
+    animation-delay: 2.2s;
+    animation-fill-mode: forwards;
+  }
+  .text-3{
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out;
+    animation-delay: 3.2s;
+    animation-fill-mode: forwards;
+  }
+  .text-4{
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out;
+    animation-delay: 4.2s;
+    animation-fill-mode: forwards;
+  }
+  .text-5{
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out;
+    animation-delay: 5.2s;
+    animation-fill-mode: forwards;
+  }
+   
+  /* @keyframes drawLine {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 80vh;
+    }
+  } */
+  @keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+
+  @media(min-width: 992px){
+    .timeline-wrap{
+      display: inline-block;
+      transform: rotate(-90deg) translateY(85%);
+      /* transform: translate(90%); */
+      /* filter: fliph; */
+    }
+    .text{
+      display: flex;
+      justify-content: center;
+      transform: rotate(90deg);
+    }
+    .item p {
+      border: 1px solid red;
+      
+      height: 100px;
+      width: 100px;
+      margin-left: -150px;
+      margin-top: -80px;
+    }
+  }
