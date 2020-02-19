@@ -6,9 +6,7 @@
   .timeline-wrap {
     width: 30vh;
     margin: 5vh auto;
-    /* padding: 5vh; */
     height: 80vh;
-    /* animation: bounceIn 1s ease-in-out; */
   }
   .timeline-wrap .timeline {
     display: flex;
@@ -18,16 +16,8 @@
     position: relative;
     height: 100%;
     margin: auto;
-    /* background: grey; */
     display: block;
-    /* box-shadow: 3px 3px 0px #8d5b2f; */
-    /* animation: drawLine 1s ease-in-out;
-    animation-delay: 1.2s;
-    animation-fill-mode: forwards; */
   }
-  /* .timeline-wrap .timeline .item{
-    padding: 50px;
-  } */
   .timeline-wrap .timeline .item-1 {
     position: absolute;
     top: 0%;
@@ -37,10 +27,6 @@
     margin-left: -18px;
     background: #fff;
     display: inline-block;
-    /* margin-top: 2vh; */
-    /* opacity: 0; */
-    /* border: 2px solid black; */
-    /* box-shadow: 3px 3px 3px #8d5b2f; */
   }
   .timeline-wrap .timeline .item-2 {
     position: absolute;
@@ -51,13 +37,6 @@
     margin-left: -18px;
     background: #fff;
     display: inline-block;
-    /* margin-top: 2vh; */
-    /* opacity: 0;
-    animation: fadeIn 1s ease-in-out;
-    animation-delay: 2.2s;
-    animation-fill-mode: forwards; */
-    /* border: 2px solid black; */
-    /* box-shadow: 3px 3px 0px #8d5b2f; */
   }
   .timeline-wrap .timeline .item-3 {
     position: absolute;
@@ -68,13 +47,6 @@
     margin-left: -18px;
     background: #fff;
     display: inline-block;
-    /* margin-top: 2vh; */
-    /* opacity: 0;
-    animation: fadeIn 1s ease-in-out;
-    animation-delay: 3.2s;
-    animation-fill-mode: forwards; */
-    /* border: 2px solid black; */
-    /* box-shadow: 3px 3px 0px #8d5b2f; */
   }
   .timeline-wrap .timeline .item-4 {
     position: absolute;
@@ -85,13 +57,6 @@
     margin-left: -18px;
     background: #fff;
     display: inline-block;
-    /* margin-top: 2vh; */
-    /* opacity: 0;
-    animation: fadeIn 1s ease-in-out;
-    animation-delay: 4.2s;
-    animation-fill-mode: forwards; */
-    /* border: 2px solid black; */
-    /* box-shadow: 3px 3px 0px #8d5b2f; */
   }
   .timeline-wrap .timeline .item-5 {
     position: absolute;
@@ -102,19 +67,12 @@
     margin-left: -18px;
     background: #fff;
     display: inline-block;
-    /* margin-top: 2vh; */
-    /* opacity: 0;
-    animation: fadeIn 1s ease-in-out;
-    animation-delay: 4.2s;
-    animation-fill-mode: forwards; */
-    /* border: 2px solid black; */
-    /* box-shadow: 3px 3px 0px #8d5b2f; */
   }
   .text{
     display: flex;
-    justify-content: center;
-    margin-left: -128px;
-    /* border: 1px solid red; */
+    justify-content: start;
+    margin-left: -175px;
+    width: 170px;
     margin-top: 8px;
   }
   .text-1{
@@ -147,15 +105,7 @@
     animation-delay: 5.2s;
     animation-fill-mode: forwards;
   }
-   
-  /* @keyframes drawLine {
-    0% {
-      height: 0;
-    }
-    100% {
-      height: 80vh;
-    }
-  } */
+
   @keyframes fadeIn {
     0% {
       opacity:0;
@@ -174,15 +124,16 @@
     }
     .text{
       display: flex;
-      justify-content: center;
+      width: 150px;
+      margin-left: -128px;
+      /* justify-content: start; */
+      /* text-align: left; */
       transform: rotate(90deg);
     }
-    .item p {
-      border: 1px solid red;
-      
+    .item p {  
       height: 100px;
-      width: 100px;
-      margin-left: -150px;
-      margin-top: -80px;
+      /* width: 150px; */
+      margin-left: -190px;
+      margin-top: -75px;
     }
   }
