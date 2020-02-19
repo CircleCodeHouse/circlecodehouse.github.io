@@ -8,8 +8,9 @@
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="timeline.css" />
-    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/aji6ikr.css">
+    <link rel="stylesheet" type="text/css" href="/timeline.css" />
+    <link rel="stylesheet" type="text/css" href="/styles.css" />
     <script type="application/ld+json">
       {
         "@context": "http://schema.org",
@@ -29,24 +30,79 @@
    <style amp-custom>
      /* .bg-main.amp-mode-mouse {
        background-color: #ffffff;
-     } */
-      .frontPage {
-        width:70%;
-        height:50%;
-        background-color: #ffffff;
+     }*/
+   
+      .jumbotron{
+        height: 45%;
         margin: auto;
-        margin-top: 10%;
-        box-shadow: 2px 4px 10px lightgray;
-      }
-
-      .jumbotron {
-        height: 80%;
+        width: 100%;
+        margin-right: 20%;
+        box-shadow: 0px 1px 10px #00000029;
+        margin-left: -10%;
+        z-index: 100 !important; 
+        margin: none;
+        padding: none;
         background-color: #ffffff;
       }
       a.navBar-brand {
-        color: #9900FF;
+        color: #9900FF !important;
       }
 
+      .navbar-light .navbar-nav .nav-link {
+        font-family: "Montserrat";
+        font-size: 24px;
+        color: #707070;
+        text-transform: uppercase !important;
+     }
+
+       .nav-item.nav-link.active {
+        color: #707070 !important;
+       }
+
+       .navBar {
+          width:70%;
+          margin-left: 15%;
+          background-color: #ffffff !important;
+       }
+
+       .display-4 {
+          font: Bold 60px/68px Henriette;
+          color: #707070;
+       }
+
+       .btn.btn-primary {
+          background-color: #9900FF;
+          border-color: #9900FF;
+          box-shadow: #9900FF;
+          font: Bold 40px/45px Henriette;
+       }
+
+       .btn.btn-secondary {
+          background-color: #9900FF;
+          border-color: #9900FF;
+          box-shadow: #9900FF;
+          font: Bold 40px/45px Henriette;
+       }
+
+      .purpleTrapezoid {
+        width: 0; 
+        height: 100%; 
+        border-top: 420px solid transparent;
+        border-bottom: 420px solid transparent; 
+        border-left: 450px solid #9900FF;
+
+      }
+
+    
+
+
+      .fullFrontPage {
+        display: flex;
+        height: 800px;
+        width: 100%;
+      }
+    
+     
     </style>
   </head>
 
@@ -55,7 +111,11 @@
 <body class="bg-main">
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Circle Coding House</a>
+  
+    <a class="navbar-brand" href="#">
+        <img src="./images/portfolio/CircleCodeHouseLogo.png">
+    </a>
+
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -72,15 +132,21 @@
   <section>
 
 
-    <div class="frontPage"> 
-      <div class="jumbotron">
-        <h1 class="display-4">Development Made Easy</h1>
-        <p class="lead">Your creative needs all in one place.</p>
-        <hr class="my-4">
+    <div class="fullFrontPage">
+        
 
-        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-      </div>
-   </div> 
+          <div class="purpleTrapezoid"></div>
+      
+
+          <div class="jumbotron">
+            <h1 class="display-4">Development <br> Made Easy</h1>
+            <p class="lead">Your creative needs all in one place.</p>
+            <hr class="my-4">
+            <a class="btn btn-primary" href="#" role="button">Our Work</a>
+            <a class="btn btn-secondary" href="#" role="button">Our Work</a>
+          </div>
+      
+    </div>
 
   </section>
 

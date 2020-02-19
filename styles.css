@@ -1,9 +1,5 @@
-body{
+body {
   font-family: 'Montserrat', sans-serif;
-}
-.circle:before {
-  content: ' \25CF';
-  font-size: 200px;
 }
 /* COLORS */
 /* BACKGROUNDS */
