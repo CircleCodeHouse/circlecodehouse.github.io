@@ -5,8 +5,6 @@ body{
   content: ' \25CF';
   font-size: 200px;
 }
-
-
 /* COLORS */
 /* BACKGROUNDS */
 .bg-main {
@@ -28,7 +26,4 @@ b {
 .box-shadowed{
   box-shadow: 0px 1px 10px #00000029;
 }
-
-
-
 /*front page styling */

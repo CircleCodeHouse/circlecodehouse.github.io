@@ -106,7 +106,6 @@
     animation-delay: 5.2s;
     animation-fill-mode: forwards;
   }
-
   @keyframes fadeIn {
     0% {
       opacity:0;
@@ -115,7 +114,6 @@
       opacity:1;
     }
   }
-
   @media(min-width: 992px){
     .timeline-wrap{
       display: inline-block;
