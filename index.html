@@ -29,8 +29,12 @@
    
    <style amp-custom>
   
-  
-     
+      #headerLogo {
+        margin-left: 100%;
+      }
+
+
+
       .jumbotron{
         height: 50%;
         margin: auto;
@@ -45,6 +49,7 @@
       }
       a.navBar-brand {
         color: #9900FF !important;
+        margin-left: 20%;
       }
 
       .navbar-light .navbar-nav .nav-link {
@@ -62,6 +67,7 @@
           width: 100% !important;
           background-color: #ffffff !important;
        }
+     
 
        .display-4 {
           font: Bold 60px/68px Henriette;
@@ -82,7 +88,7 @@
           font: Bold 40px/45px Henriette;
        }
 
-      .purpleTrapezoid {
+      .purpleTriangle {
         width: 0; 
         height: 100%; 
         border-top: 420px solid transparent;
@@ -108,24 +114,27 @@
 
 <body class="bg-main">
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  
-    <a class="navbar-brand" href="#">
-        <img src="./images/portfolio/CircleCodeHouseLogo.png">
-    </a>
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-item nav-link active" href="#">About <span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link" href="#">Staffing</a>
-        <a class="nav-item nav-link" href="#">Portfolio</a>
-        <a class="nav-item nav-link" href="#">Contact</a>
-      </div>
-    </div>
-  </nav>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    
+          <a class="navbar-brand" href="#">
+              <img id="headerLogo" src="./images/portfolio/CircleCodeHouseLogo.png">
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+              <a class="nav-item nav-link active" href="#">About <span class="sr-only">(current)</span></a>
+              <a class="nav-item nav-link" href="#">Staffing</a>
+              <a class="nav-item nav-link" href="#">Portfolio</a>
+              <a class="nav-item nav-link" href="#">Contact</a>
+            </div>
+          </div>
+    </nav>
+
   <!-- Hero -->
   <section>
 
@@ -133,7 +142,7 @@
     <div class="fullFrontPage">
         
 
-          <div class="purpleTrapezoid"></div>
+          <div class="purpleTriangle"></div>
       
 
           <div class="jumbotron">
