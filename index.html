@@ -29,11 +29,12 @@
    
    <style amp-custom>
   
+
+  /*nav and header*/
+     
       #headerLogo {
         margin-left: 80%;
       }
-
-
 
       .jumbotron{
         height: 500px;
@@ -44,6 +45,8 @@
         z-index: 100 !important;
         background-color: #ffffff;
       }
+
+     
       a.navBar-brand {
         color: #9900FF !important;
         margin-left: 20%;
@@ -72,10 +75,13 @@
        }
 
        .btn.btn-primary {
-          background-color: #9900FF;
-          border-color: #9900FF;
+          background-color: #ffffff;
+          border: 2px solid #9900FF;
           box-shadow: #9900FF;
+          color: #707070;
           font: Bold 40px/45px Henriette;
+          border-radius: 5px 15px;
+          margin: 1.5rem;
        }
 
        .btn.btn-secondary {
@@ -83,6 +89,16 @@
           border-color: #9900FF;
           box-shadow: #9900FF;
           font: Bold 40px/45px Henriette;
+          border-radius: 5px 15px;
+          margin: 1.5rem;
+
+          justify-content: right;
+       }
+
+       .buttonGroup {
+         width: 100%;
+         margin-left: 40%;
+          height: auto;
        }
 
       .purpleTriangle {
@@ -142,11 +158,14 @@
       
 
           <div class="jumbotron">
-            <h1 class="display-4">Development <br> Made Easy</h1>
+            <h1 class="display-4">Development <br> Made Easy.</h1>
             <p class="lead">Your creative needs all in one place.</p>
             <hr class="my-4">
-            <a class="btn btn-primary" href="#" role="button">Our Work</a>
-            <a class="btn btn-secondary" href="#" role="button">Our Work</a>
+
+              <div class="buttonGroup">
+                <a class="btn btn-primary" href="#" role="button">Our Work</a>
+                <a class="btn btn-secondary" href="#" role="button">Our Work</a>
+              </div>
           </div>
       
     </div>
