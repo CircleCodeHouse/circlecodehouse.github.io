@@ -84,15 +84,29 @@
           margin: 1.5rem;
        }
 
+       .btn.btn-primary:hover {
+          background-color: #9900FF;
+          border-color: #9900FF;
+          color: #ffffff;
+          box-shadow: #9900FF;
+       }
+
        .btn.btn-secondary {
           background-color: #9900FF;
           border-color: #9900FF;
+          border: 2px solid #9900FF;
           box-shadow: #9900FF;
           font: Bold 40px/45px Henriette;
           border-radius: 5px 15px;
           margin: 1.5rem;
-
           justify-content: right;
+       }
+
+       .btn.btn-secondary:hover {
+          background-color: #ffffff;
+          border: 2px solid #9900FF;
+          box-shadow: #9900FF;
+          color: #707070;
        }
 
        .buttonGroup {
@@ -109,13 +123,17 @@
         border-left: 490px solid #9900FF;
       }
 
-    
-
       .fullFrontPage {
         background-color: #ffffff;
         display: flex;
         height: 840px;
         width: 100%;
+      }
+
+      .page-heading {
+        font: Bold 50px/57px Henriette;
+        letter-spacing: 0;
+        color: #707070;
       }
     
      
@@ -164,7 +182,7 @@
 
               <div class="buttonGroup">
                 <a class="btn btn-primary" href="#" role="button">Our Work</a>
-                <a class="btn btn-secondary" href="#" role="button">Our Work</a>
+                <a class="btn btn-secondary" href="#" role="button">Let's Talk</a>
               </div>
           </div>
       
@@ -173,7 +191,16 @@
   </section>
 
   <!-- About Us -->
-  <section></section>
+  <section class="w-100">
+      <div class="w-100 row d-flex justify-content-center pt-5 mx-0">
+        <h2 class="page-heading">About Us</h2>
+      </div>
+      <div class="w-100 row d-flex justify-content-center my-3 py-5 mx-0 text-center">
+        <p class="col-5">Circle Code House is an answer to several needs that we’ve heard <br> from startups, enterprises, hiring partners and entrepreneurs.      
+      </div>
+    </section>
+
+
 
   <!-- The Process -->
   <section class="bg-white">
@@ -211,7 +238,7 @@
   <!-- Who We Are -->
   <section class="w-100">
     <div class="w-100 row d-flex justify-content-center pt-5 mx-0">
-      <h2>Who Are We?</h2>
+      <h2 class="page-heading">Who Are We?</h2>
     </div>
     <div class="w-100 row d-flex justify-content-center my-3 py-5 mx-0">
       <p class="col-5">Austin Coding Academy graduates have completed an almost year-long program that teaches <b>Full-Stack JavaScript.</b> They have backgrounds ranging from teaching, project management, and tech support to operations and digital marketing. Most held full-time jobs while learning development and building <b>real-world projects.</b> Our grads are <b>hungry</b> to prove their skills and grit at a company like yours.</p>      
@@ -221,7 +248,7 @@
   <!-- Our Portfolio -->
   <section class="w-100 bg-white">
     <div class="w-100 row d-flex justify-content-center pt-5 mx-0">
-      <h2>Our portfolio</h2>
+      <h2 class="page-heading">Our Portfolio</h2>
     </div>
     <div class="w-100 row d-flex justify-content-center align-items-center">
       <div class="col-12 col-md-9 row box-shadowed p-4 my-5">
@@ -244,7 +271,7 @@
   <!-- Meet The Team -->
   <section class="w-100">
     <div class="w-100 row d-flex justify-content-center pt-5 mx-0">
-      <h2>Our Team</h2>
+      <h2 class="page-heading">Our Team</h2>
     </div>
     <div class="w-100 row d-flex justify-content-center  align-items-center">
       <div class="col-12 col-md-9 row p-4 my-5">
