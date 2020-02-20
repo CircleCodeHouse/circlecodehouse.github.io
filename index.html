@@ -151,9 +151,25 @@
       /*Footer*/
     
       #footer {
-        height: 200px;
+        height: auto;
+        position: relative;
+      }
+
+      #topFooter {
+        height: 300px;
+      }
+      .text {
+        position: absolute;
+        bottom: 0;
       }
      
+      #footerAddress {
+        margin-top: 150px;
+      }
+
+      .fa {
+        font-size: 40px !important;
+      }
     </style>
   </head>
 
@@ -334,10 +350,16 @@
   <!-- Footer -->
   <section class="w-100 bg-gray" id="footer">
      
+      <div class="row text-center" id="topFooter">
+          <div class="col-sm" id="footerAddress">Circle Code House, LLC<br>
+            1335 E. Whitestone Blvd W-100 Cedar Park, TX 78613</div>
+          <div class="col-sm"></div>
+          <div class="col-sm">
+          </div>
+        </div>
 
         <div class="row text-center">
-            <div class="col-sm ">Circle Code House, LLC<br>
-              1335 E. Whitestone Blvd W-100 Cedar Park, TX 78613</div>
+            <div class="col-sm"></div>
             <div class="col-sm">Copyright 2020</div>
             <div class="col-sm">
                 <i class="fa fa-twitter" aria-hidden="true"></i>
