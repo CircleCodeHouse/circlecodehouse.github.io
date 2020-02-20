@@ -193,7 +193,7 @@
   </section>
 
   <!-- About Us -->
-  <section class="w-100">
+  <section id="about-us" class="w-100">
       <div class="w-100 row d-flex justify-content-center pt-5 mx-0">
         <h2 class="page-heading">About Us</h2>
       </div>
@@ -205,40 +205,40 @@
 
 
   <!-- The Process -->
-  <section class="bg-white d-flex justify-content-center">
+  <section id="process" class="bg-white d-flex justify-content-center">
     <div class="timeline-wrap bg-white box-shadowed col-9 d-flex p-5 align-items-center">
       <div class="timeline bg-grey">
         
         <div class="item item-1 bordered">
-            <h5 class="text text-1 text-grey text-left">Consultation</h5>
-            <p class="text text-1 text-grey text-left mt-2">You tell us about your project needs.</p>
+            <h5 class="text text-1 js-loading text-grey text-left">Consultation</h5>
+            <p class="text text-1 js-loading text-grey text-left mt-2">You tell us about your project needs.</p>
         </div>
 
         <div class="item item-2 right bordered">
-          <h5 class="text text-2 text-grey text-left">Estimation</h5>
-          <p class="text text-2 text-grey text-left mt-2">We create an estimate of price and time based on the consultation.</p>
+          <h5 class="text text-2 js-loading text-grey text-left">Estimation</h5>
+          <p class="text text-2 js-loading text-grey text-left mt-2">We create an estimate of price and time based on the consultation.</p>
         </div>
 
         <div class="item item-3 bordered">
-          <h5 class="text text-3 text-grey text-left">Team</h5>
-          <p class="text text-3 text-grey text-left mt-2">Your dev team is perfectly curated to your project.</p>
+          <h5 class="text text-3 js-loading text-grey text-left">Team</h5>
+          <p class="text text-3 js-loading text-grey text-left mt-2">Your dev team is perfectly curated to your project.</p>
         </div>
 
         <div class="item item-4 right bordered">
-          <h5 class="text text-4 text-grey text-left">Build</h5>
-          <p class="text text-4 text-grey text-left mt-2">The developers jump right into your project with periodic check-ins.</p>
+          <h5 class="text text-4 js-loading text-grey text-left">Build</h5>
+          <p class="text text-4 js-loading text-grey text-left mt-2">The developers jump right into your project with periodic check-ins.</p>
         </div>
 
         <div class="item item-5 right bordered">
-          <h5 class="text text-5 text-grey text-left">Deployment</h5>
-          <p class="text text-5 text-grey text-left mt-2">We walk you through the completed project and handle all deployment.</p>
+          <h5 class="text text-5 js-loading text-grey text-left">Deployment</h5>
+          <p class="text text-5 js-loading text-grey text-left mt-2">We walk you through the completed project and handle all deployment.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Who We Are -->
-  <section class="w-100">
+  <section id="who-we-are" class="w-100">
     <div class="w-100 row d-flex justify-content-center pt-5 mx-0">
       <h2 class="page-heading">Who Are We?</h2>
     </div>
@@ -317,5 +317,26 @@
   <!-- Footer -->
   <section></section>
 
+  <script>
+    var about = document.getElementById('about-us')
+    var proc = document.getElementById('process');
+    var who = document.getElementById('who-we-are')
+    about.addEventListener('mouseover', addAnim);
+    proc.addEventListener('mouseover', addAnim);
+    who.addEventListener('mouseover', addAnim);
+
+    function addAnim() {
+      console.log('ass')
+      var text = document.getElementsByClassName('text')
+      for(let i = 0; i<text.length; i++){
+        text[i].classList.remove('js-loading')
+      }
+      about.removeEventListener('mouseover', addAnim);
+      proc.removeEventListener('mouseover', addAnim);
+      who.removeEventListener('mouseover', addAnim);
+    };
+
+    // listen to mouseover for the container
+  </script>
 </body>
 </html>

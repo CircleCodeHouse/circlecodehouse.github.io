@@ -3,6 +3,11 @@
    margin: 0;
    padding: 0;
  }
+ .js-loading *,
+ .js-loading *:before,
+ .js-loading {
+   animation-play-state: paused !important;
+}
   .timeline-wrap {
     /* width: 50vh; */
     margin: 5vh 5vh;
