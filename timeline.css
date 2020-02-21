@@ -9,20 +9,20 @@
    animation-play-state: paused !important;
 }
   .timeline-wrap {
-    /* width: 50vh; */
-    margin: 5vh 5vh;
-    width: 90vh;
+    height: 25rem;
   }
   .timeline-wrap .timeline {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 4px;
-    width: 90%;
+    width: 100%;
     border-radius: 2px;
     position: relative;
-    margin: auto;
+    /* margin: auto; */
     display: block;
+    margin-top: 10%;
+    margin-right: 40px;
   }
   .timeline-wrap .timeline .item-1 {
     position: absolute;
@@ -74,10 +74,10 @@
     background: #fff;
     display: inline-block;
   }
-  .text{
+  .timeline-text{
     display: flex;
     justify-content: start;
-    margin-top: 70px;
+    margin-top: 60px;
     width: 170px;
     /* margin-top: 8px; */
   }
