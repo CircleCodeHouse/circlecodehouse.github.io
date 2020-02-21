@@ -32,7 +32,7 @@
    <style amp-custom>
   
 
-  /*nav and header*/
+  /*Nav and Header*/
      
 
      @media screen and (min-width: 800px) {
@@ -61,7 +61,6 @@
          }
      }
 
-     
       a.navBar-brand {
         color: #9900FF !important;
         margin-left: 20%;
@@ -185,7 +184,7 @@
             border-bottom: 120px solid transparent; 
             border-left: 190px solid #9900FF;
          }
-     }
+      }
 
       .fullFrontPage {
         background-color: #ffffff;
@@ -202,17 +201,38 @@
         height: 300px;
         width: 100%;
         }
-     }
+      }
 
       /*About Us*/
+
+      @media screen and (max-width: 800px) {
+        .break1 {
+          display: none;
+        }
+      }
+      
+      @media screen and (max-width: 800px) {
+        .aboutUsDescription {
+            width: 95% !important;
+            margin-left: 5% !important;
+        }
+      }
 
       #about-us {
         margin-bottom: 4rem;
       }
+
+      #doubleColumn {
+        width: 40%;
+        margin: auto;
+      }
+
+      @media screen and (max-width: 800px) {
         #doubleColumn {
-          width: 40%;
-          margin: auto;
+          width: 100%;
+          margin-left: 20%;
         }
+      }
 
       .page-heading {
         font: Bold 50px/57px Henriette;
@@ -221,17 +241,48 @@
       }
 
 
-
       /*Footer*/
     
-      #footer {
-        height: auto;
-        position: relative;
+   
+
+      @media screen and (min-width: 800px) {
+        #footer {
+          height: 250px;
+          position: relative;
+        }
       }
 
-      #topFooter {
-        height: 300px;
+      @media screen and (min-width: 800px) {
+        #topFooter {
+           height: 250px;
+        }
       }
+
+      @media screen and (min-width: 800px) {
+        #leftFooter {
+          margin-top: 90px;
+        }
+      }
+
+      @media screen and (min-width: 800px) {
+        .rightFooter {
+          margin-top: auto;
+        }
+      }
+
+      @media screen and (max-width: 800px) {
+        #leftFooter {
+          margin-top: 3rem;
+        }
+      }
+
+      @media screen and (max-width: 800px) {
+       .rightFooter {
+          margin-top: 3rem;
+        }
+      }
+
+
       .text {
         position: absolute;
         bottom: 0;
@@ -244,6 +295,7 @@
       .fa {
         font-size: 40px !important;
       }
+
     </style>
   </head>
 
@@ -295,16 +347,16 @@
       <div class="w-100 row d-flex justify-content-center pt-5 mx-0">
         <h2 class="page-heading">About Us</h2>
       </div>
-      <div class="w-100 row d-flex justify-content-center my-3 mx-0 text-center">
-        <p >Circle Code House is an answer to several needs that we’ve heard <br> from startups, enterprises, hiring partners and entrepreneurs.      
+      <div class="w-100 row d-flex justify-content-center my-3 mx-0 aboutUsDescription">
+        <p>Circle Code House is an answer to several needs that we’ve heard <br class="break1"/> from startups, enterprises, hiring partners and entrepreneurs.      
       </div>
 
       <div class="container" id="doubleColumn">
           <div class="row">
-            <div class="col">
+            <div class="col-12 col-md">
                 If you need short-term <br> developers, we can handle <br> all of the paperwork <br> necessary. Just give us the <br> skills and timeframe and <br> we will match you with the<br>  perfect candidate.
             </div>
-            <div class="col">
+            <div class="col-12 col-md">
                 If you want to hand<br> the project over to our team,<br> we'll assemble a team <br>with a senior developer<br> leading without costing <br>an arm and a leg.
             </div>
           </div>
@@ -358,7 +410,7 @@
       <h2 class="page-heading">Who Are We?</h2>
     </div>
     <div class="w-100 row d-flex justify-content-center my-3 py-5 mx-0">
-      <p class="col-5">Austin Coding Academy graduates have completed an almost year-long program that teaches <b>Full-Stack JavaScript.</b> They have backgrounds ranging from teaching, project management, and tech support to operations and digital marketing. Most held full-time jobs while learning development and building <b>real-world projects.</b> Our grads are <b>hungry</b> to prove their skills and grit at a company like yours.</p>      
+      <p class="col-12 col-md-5">Austin Coding Academy graduates have completed an almost year-long program that teaches <b>Full-Stack JavaScript.</b> They have backgrounds ranging from teaching, project management, and tech support to operations and digital marketing. Most held full-time jobs while learning development and building <b>real-world projects.</b> Our grads are <b>hungry</b> to prove their skills and grit at a company like yours.</p>      
     </div>
   </section>
 
@@ -437,16 +489,16 @@
 
     	<div class='row no-gutters text-center' id="topFooter">
 
-          <div class='col-12 col-md-4 order-md-3 order-1 d'>
+          <div class='col-12 col-md-4 order-md-3 order-1 rightFooter d'>
               <i class="fa fa-twitter" aria-hidden="true"></i>
               <i class="fa fa-instagram" aria-hidden="true"></i>
               <i class="fa fa-facebook" aria-hidden="true"></i>
           </div>
-          <div class='col-12 col-md-4 order-md-1 order-2 d'>
+          <div class='col-12 col-md-4 order-md-1 order-2 d' id="leftFooter">
                 Circle Code House, LLC<br>
               1335 E. Whitestone Blvd W-100 Cedar Park, TX 78613
           </div>
-          <div class='col-12 col-md-4 order-md-2 order-3 d'>
+          <div class='col-12 col-md-4 order-md-2 order-3 rightFooter d'>
             Copyright 2020
           </div>
           
