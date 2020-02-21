@@ -178,6 +178,14 @@
         border-left: 490px solid #9900FF;
         position: absolute;
       }
+      .purpleTriangle2 {
+        /* width: 20%;  */ 
+        height: auto; 
+        border-top: 490px solid transparent;
+        border-bottom:170px solid transparent; 
+        border-left: 490px solid #9900FF;
+        position: absolute;
+      }
 
       @media screen and (max-width: 800px) {
         .purpleTriangle{
@@ -321,7 +329,7 @@
     </div>
     <div class="w-100 row d-flex justify-content-center align-items center">
       <div class="timeline-wrap bg-white box-shadowed col-12 col-md-9 d-flex p-5 my-5">
-        <div class="timeline bg-grey">
+        <div class="timeline bg-grey mx-5">
           
           <div class="item item-1 bordered">
               <h5 class="timeline-text text-1 js-loading text-grey text-left">Consultation</h5>
@@ -364,11 +372,12 @@
 
   <!-- Our Portfolio -->
   <section id="portfolio" class="w-100 bg-white">
+    <!-- <div class="purpleTriangle"></div> -->
     <div class="w-100 row d-flex justify-content-center pt-5 mx-0">
       <h2 class="page-heading">Our Portfolio</h2>
     </div>
-    <div class="w-100 row d-flex justify-content-center align-items-center">
-      <div class="col-12 col-md-9 row box-shadowed p-5 my-5">
+    <div class="w-100 row d-flex justify-content-center align-items-center pb-5">
+      <div class="col-12 col-md-9 row bg-white box-shadowed p-5 my-5">
         <div class="col-12 col-md-4">
           <img height="172" class="img-fluid rounded" src="./images/portfolio/EarlyCode.png" alt="Early Code"></img>
           <p class="text-grey d-flex justify-content-center">Early Code</p>
@@ -418,8 +427,56 @@
       </div>
       <div class="w-100 row d-flex justify-content-center align-items-center">
         <div class="col-12 col-md-9 justify-content-center row box-shadowed p-4 my-5">
-        
-                <a class="btn btn-primary" href="#" role="button">Submit</a>
+          <form>
+              <div class="col-12 flex-wrap mb-5 body-text">
+                <div class="row flex-wrap flex-sm-nowrap">
+                  <div class="form-group col-12 col-sm-6">
+                    <!-- <label>Name</label> -->
+                    <input name="name" placeholder="Name" type="text" class="form-text-input">
+                  </div>
+
+                  <div class="form-group col-12 col-sm-6">
+                    <!-- <label>Email</label> -->
+                    <input name="email" placeholder="Email" type="text" class="form-text-input">
+                  </div>
+                </div>
+
+                <div class="row flex-wrap flex-sm-nowrap">
+                  <div class="form-group col-12 col-sm-6">
+                    <!-- <label>Phone Number</label> -->
+                    <input name="phone" placeholder="Phone Number" type="tel" class="form-text-input">
+                  </div>
+
+                  <div class="form-group col-12 col-sm-6">
+                    <!-- <label>Company</label> -->
+                    <input name="company" placeholder="company" type="text" class="form-text-input">
+                  </div>
+                </div>
+
+                <div class="row flex-wrap flex-sm-nowrap">
+                  <div class="form-group col-12 col-sm-6">
+                    <label>How Can We Help?</label>
+                    <select name="how_can_we_help_" type="select" class="form-control">
+                      <option value="staffing" label="Staffing">Staffing</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group col-12 mb-0 px-0">
+                  <label for="exampleFormControlTextarea1">What's on your mind?</label>
+                  <textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="3" style="resize: none;"></textarea>
+                </div>
+
+              </div> <!-- / .row -->
+
+              <div class="row mt-0">
+                <!-- <div class="col-auto ml-3"> -->
+                  <!-- Submit -->
+                  <a class="btn btn-primary" href="#" role="button">Submit</a>
+                <!-- </div> -->
+              </div> <!-- / .row -->
+            </form>
+
         </div>
       </div>
 
