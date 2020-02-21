@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.typekit.net/aji6ikr.css">
     <link rel="stylesheet" type="text/css" href="/timeline.css" />
     <link rel="stylesheet" type="text/css" href="/styles.css" />
@@ -22,6 +23,7 @@
         ]
       }
     </script>
+    <script src="https://use.fontawesome.com/22a8fa2d6f.js"></script>
     
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
    
@@ -38,7 +40,7 @@
 
       .jumbotron{
         height: 500px;
-        /* width: 70%; */
+        width: 70%;
         margin-left: -15% !important;
         margin-top: 170px;
         box-shadow: 0px 1px 10px #00000029;
@@ -123,15 +125,6 @@
         border-left: 490px solid #9900FF;
       }
 
-      .purpleright {
-        width: 20%; 
-        height: auto; 
-        border-top: -420px solid transparent;
-        border-bottom: -420px solid transparent; 
-        border-left: -490px solid #9900FF;
-      }
-
-
       .fullFrontPage {
         background-color: #ffffff;
         display: flex;
@@ -139,13 +132,44 @@
         width: 100%;
       }
 
+      /*About Us*/
+        #doubleColumn {
+          width: 40%;
+          margin: auto;
+        }
+
       .page-heading {
         font: Bold 50px/57px Henriette;
         letter-spacing: 0;
         color: #707070;
       }
+
+
+
+
+
+      /*Footer*/
     
+      #footer {
+        height: auto;
+        position: relative;
+      }
+
+      #topFooter {
+        height: 300px;
+      }
+      .text {
+        position: absolute;
+        bottom: 0;
+      }
      
+      #footerAddress {
+        margin-top: 150px;
+      }
+
+      .fa {
+        font-size: 40px !important;
+      }
     </style>
   </head>
 
@@ -179,7 +203,7 @@
     <div class="fullFrontPage">
           <div class="purpleTriangle"></div>
 
-          <div class="jumbotron col-9">
+          <div class="jumbotron">
             <h1 class="display-4">Development <br> Made Easy.</h1>
             <p class="lead">Your creative needs all in one place.</p>
             <hr class="my-4">
@@ -193,52 +217,69 @@
   </section>
 
   <!-- About Us -->
-  <section class="w-100">
+  <section id="about-us" class="w-100">
       <div class="w-100 row d-flex justify-content-center pt-5 mx-0">
         <h2 class="page-heading">About Us</h2>
       </div>
       <div class="w-100 row d-flex justify-content-center my-3 py-5 mx-0 text-center">
         <p class="col-5">Circle Code House is an answer to several needs that we’ve heard <br> from startups, enterprises, hiring partners and entrepreneurs.      
       </div>
+
+      <div class="container" id="doubleColumn">
+          <div class="row">
+            <div class="col">
+                If you need short-term <br> developers, we can handle <br> all of the paperwork <br> necessary. Just give us the <br> skills and timeframe and <br> we will match you with the<br>  perfect candidate.
+            </div>
+            <div class="col">
+                If you want to hand<br> the project over to our team,<br> we'll assemble a team <br>with a senior developer<br> leading without costing <br>an arm and a leg.
+            </div>
+          </div>
+        </div>
     </section>
 
 
 
   <!-- The Process -->
-  <section class="bg-white d-flex justify-content-center">
-    <div class="timeline-wrap bg-white box-shadowed col-9 d-flex p-5 align-items-center">
-      <div class="timeline bg-grey">
-        
-        <div class="item item-1 bordered">
-            <h5 class="text text-1 text-grey text-left">Consultation</h5>
-            <p class="text text-1 text-grey text-left mt-2">You tell us about your project needs.</p>
-        </div>
+  <section id="process" class="bg-white d-flex-box justify-content-center">
+    <div class="d-flex flex-column align-items-center w-100">
+      <h2>The Process</h2>
+      <p>We are transparent with our process from consultation to deployment.</p>
+    </div>
+    <div class="d-flex justify-content-center p-5">
+      <div class="timeline-wrap bg-white box-shadowed col-9 d-flex align-items-center p-5">
+        <div class="timeline bg-grey">
+          
+          <div class="item item-1 bordered">
+              <h5 class="text text-1 js-loading text-grey text-left">Consultation</h5>
+              <p class="text text-1 js-loading text-grey text-left mt-2">You tell us about your project needs.</p>
+          </div>
 
-        <div class="item item-2 right bordered">
-          <h5 class="text text-2 text-grey text-left">Estimation</h5>
-          <p class="text text-2 text-grey text-left mt-2">We create an estimate of price and time based on the consultation.</p>
-        </div>
+          <div class="item item-2 right bordered">
+            <h5 class="text text-2 js-loading text-grey text-left">Estimation</h5>
+            <p class="text text-2 js-loading text-grey text-left mt-2">We create an estimate of price and time based on the consultation.</p>
+          </div>
 
-        <div class="item item-3 bordered">
-          <h5 class="text text-3 text-grey text-left">Team</h5>
-          <p class="text text-3 text-grey text-left mt-2">Your dev team is perfectly curated to your project.</p>
-        </div>
+          <div class="item item-3 bordered">
+            <h5 class="text text-3 js-loading text-grey text-left">Team</h5>
+            <p class="text text-3 js-loading text-grey text-left mt-2">Your dev team is perfectly curated to your project.</p>
+          </div>
 
-        <div class="item item-4 right bordered">
-          <h5 class="text text-4 text-grey text-left">Build</h5>
-          <p class="text text-4 text-grey text-left mt-2">The developers jump right into your project with periodic check-ins.</p>
-        </div>
+          <div class="item item-4 right bordered">
+            <h5 class="text text-4 js-loading text-grey text-left">Build</h5>
+            <p class="text text-4 js-loading text-grey text-left mt-2">The developers jump right into your project with periodic check-ins.</p>
+          </div>
 
-        <div class="item item-5 right bordered">
-          <h5 class="text text-5 text-grey text-left">Deployment</h5>
-          <p class="text text-5 text-grey text-left mt-2">We walk you through the completed project and handle all deployment.</p>
+          <div class="item item-5 right bordered">
+            <h5 class="text text-5 js-loading text-grey text-left">Deployment</h5>
+            <p class="text text-5 js-loading text-grey text-left mt-2">We walk you through the completed project and handle all deployment.</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Who We Are -->
-  <section class="w-100">
+  <section id="who-we-are" class="w-100">
     <div class="w-100 row d-flex justify-content-center pt-5 mx-0">
       <h2 class="page-heading">Who Are We?</h2>
     </div>
@@ -297,25 +338,65 @@
   </section>
 
   <!-- Contact Us -->
-  <section>
-
-
-    
-      <div class="fullFrontPage">
-        
-            <!-- <div class="purpleTriangle"></div>
-   -->
-            <div class="jumbotron">
-            
-            
-              <div class="purpleright"></div>
-           
-            </div>
+  <section class="w-100 bg-white">
+      <div class="w-100 row d-flex justify-content-center pt-5 mx-0">
+        <h2 class="page-heading">Contact Us</h2>
       </div>
+      <div class="w-100 row d-flex justify-content-center align-items-center">
+        <div class="col-12 col-md-9 row box-shadowed p-4 my-5">
+        
+                <a class="btn btn-primary" href="#" role="button">Submit</a>
+        </div>
+      </div>
+
+      <div class="w-100 row d-flex justify-content-center my-3 py-5 mx-0 text-center">
+          <p class="col-5">Question can’t wait? Reach out: <br>Dan Cumming<br> Managing Director<br> 512-677-7925<br> dan@circlecodehouse.com 
+        </div>
     </section>
+  
 
   <!-- Footer -->
-  <section></section>
+  <section class="w-100 bg-gray" id="footer">
+     
+      <div class="row text-center" id="topFooter">
+          <div class="col-sm" id="footerAddress">Circle Code House, LLC<br>
+            1335 E. Whitestone Blvd W-100 Cedar Park, TX 78613</div>
+          <div class="col-sm"></div>
+          <div class="col-sm">
+          </div>
+        </div>
 
+        <div class="row text-center">
+            <div class="col-sm"></div>
+            <div class="col-sm">Copyright 2020</div>
+            <div class="col-sm">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+            </div>
+          </div>
+  </section>
+
+  <script>
+    var about = document.getElementById('about-us')
+    var proc = document.getElementById('process');
+    var who = document.getElementById('who-we-are')
+    about.addEventListener('mouseover', addAnim);
+    proc.addEventListener('mouseover', addAnim);
+    who.addEventListener('mouseover', addAnim);
+
+    function addAnim() {
+      console.log('ass')
+      var text = document.getElementsByClassName('text')
+      for(let i = 0; i<text.length; i++){
+        text[i].classList.remove('js-loading')
+      }
+      about.removeEventListener('mouseover', addAnim);
+      proc.removeEventListener('mouseover', addAnim);
+      who.removeEventListener('mouseover', addAnim);
+    };
+
+    // listen to mouseover for the container
+  </script>
 </body>
 </html>
