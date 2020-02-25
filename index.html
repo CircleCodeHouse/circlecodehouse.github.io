@@ -8,6 +8,12 @@
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" />
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.typekit.net/aji6ikr.css">
     <link rel="stylesheet" type="text/css" href="/timeline.css" />
@@ -34,10 +40,17 @@
 
   /*Nav and Header*/
      
+    
 
-     @media screen and (min-width: 800px) {
+     @media screen and (min-width: 1200px) {
          #headerLogo {
            margin-left: 80%;
+         }
+     }
+
+     @media screen and (max-width: 800px) {
+          #headerLogo {
+           width: 60%;
          }
      }
     
@@ -61,21 +74,40 @@
          }
      }
 
-      a.navBar-brand {
-        color: #9900FF !important;
-        margin-left: 20%;
-      }
+
+     @media screen and (max-width: 800px) {
+      .navbar-brand {
+          margin-right: -2.2rem !important;
+         }
+     }
+
+    
+     .navbar-expand-lg .navbar-nav {
+       margin-right: 17%;
+     }
 
       .navbar-light .navbar-nav .nav-link {
         font-family: "Montserrat";
-        font-size: 25px;
+        font-size: 20px;
         color: #707070;
         text-transform: uppercase !important;
      }
 
        .nav-item.nav-link.active {
         color: #707070 !important;
+        border-bottom: 2px solid #ffffff;
        }
+
+       .nav-link:hover  {
+         color: #9900FF !important;
+         border-bottom: 2px solid #9900FF;
+       }
+
+       .nav-item.nav-link.active:hover {
+        color: #9900FF !important;
+        border-bottom: 2px solid #9900FF;
+       }
+
 
        .navbar.navbar-expand-lg.navbar-light.bg-light{
           width: 100% !important;
@@ -90,7 +122,7 @@
 
        @media screen and (max-width: 800px){
           .display-4 {
-            font: Bold 20px/20px Henriette;
+            font: Bold 25px/25px Henriette;
             color: #707070;
           }
        }
@@ -289,6 +321,15 @@
           margin-top: 3rem;
         }
       }
+      
+      #purplecircle {
+        top: 1238px;
+        left: 1357px;
+        width: 800px;
+        height: 800px;
+        border: 1px solid #C67CF8;
+        opacity: 1;
+      }
 
 
       .text {
@@ -303,18 +344,23 @@
       .fa {
         font-size: 40px !important;
       }
+      .fa:hover {
+        color: #9900FF;
+      }
 
     </style>
   </head>
 
 
-
+ 
 <body class="bg-main">
   <!-- Navigation -->
 
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
     
+
+       
           <a class="navbar-brand" href="#">
               <img id="headerLogo" src="./images/portfolio/CircleCodeHouseLogo.png">
           </a>
@@ -322,7 +368,7 @@
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="collapse navbar-collapse text-center" id="navbarNavAltMarkup">
             <div class="navbar-nav ml-auto">
               <a class="nav-item nav-link active" href="#about-us">About <span class="sr-only">(current)</span></a>
               <a class="nav-item nav-link" href="#">Staffing</a>
@@ -331,6 +377,9 @@
             </div>
           </div>
     </nav>
+
+   
+
 
   <!-- Hero -->
   <section>
@@ -358,6 +407,8 @@
       <div class="w-100 row d-flex justify-content-center my-3 mx-0 aboutUsDescription">
         <p>Circle Code House is an answer to several needs that we’ve heard <br class="break1"/> from startups, enterprises, hiring partners and entrepreneurs.      
       </div>
+      
+      <div id="purpleCircle"></div>
 
       <div class="container" id="doubleColumn">
           <div class="row">
@@ -561,26 +612,6 @@
           </div>
           
         </div>
-
-
-
-      <!-- <div class="row text-center" id="topFooter">
-          <div class="col-sm" id="footerAddress">Circle Code House, LLC<br>
-            1335 E. Whitestone Blvd W-100 Cedar Park, TX 78613</div>
-          <div class="col-sm"></div>
-          <div class="col-sm">
-          </div>
-        </div>
-
-        <div class="row text-center">
-            <div class="col-sm"></div>
-            <div class="col-sm">Copyright 2020</div>
-            <div class="col-sm">
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-            </div>
-          </div> -->
   </section>
 
   <script>
