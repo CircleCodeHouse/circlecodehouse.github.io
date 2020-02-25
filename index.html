@@ -42,7 +42,7 @@
      
     
 
-     @media screen and (min-width: 800px) {
+     @media screen and (min-width: 1200px) {
          #headerLogo {
            margin-left: 80%;
          }
@@ -82,24 +82,30 @@
      }
 
     
+     .navbar-expand-lg .navbar-nav {
+       margin-right: 17%;
+     }
 
       .navbar-light .navbar-nav .nav-link {
         font-family: "Montserrat";
-        font-size: 25px;
+        font-size: 20px;
         color: #707070;
         text-transform: uppercase !important;
      }
 
        .nav-item.nav-link.active {
         color: #707070 !important;
+        border-bottom: 2px solid #ffffff;
        }
 
        .nav-link:hover  {
          color: #9900FF !important;
+         border-bottom: 2px solid #9900FF;
        }
 
        .nav-item.nav-link.active:hover {
         color: #9900FF !important;
+        border-bottom: 2px solid #9900FF;
        }
 
 
@@ -334,13 +340,15 @@
   </head>
 
 
-
+ 
 <body class="bg-main">
   <!-- Navigation -->
 
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
     
+
+       
           <a class="navbar-brand" href="#">
               <img id="headerLogo" src="./images/portfolio/CircleCodeHouseLogo.png">
           </a>
