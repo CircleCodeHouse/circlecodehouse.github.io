@@ -101,16 +101,19 @@
         border-bottom: 2px solid #ffffff;
        }
 
-       .nav-link:hover  {
-         color: #9900FF !important;
-         border-bottom: 2px solid #9900FF;
-       }
-
-       .nav-item.nav-link.active:hover {
-        color: #9900FF !important;
-        border-bottom: 2px solid #9900FF;
-       }
-
+        @media screen and (min-width: 800px) {
+          .nav-link:hover  {
+                color: #9900FF !important;
+                border-bottom: 2px solid #9900FF;
+              }
+        }
+  
+        @media screen and (min-width: 800px) {
+          .nav-item.nav-link.active:hover {
+            color: #9900FF !important;
+            border-bottom: 2px solid #9900FF;
+          }
+        }
 
        .navbar.navbar-expand-lg.navbar-light.bg-light{
           width: 100% !important;
@@ -430,9 +433,9 @@
   <section id="process" class="bg-white d-flex-box justify-content-center">
     <div class="d-flex flex-column align-items-center w-10 pt-5">
       <h2>The Process</h2>
-      <p>We are transparent with our process from consultation to deployment.</p>
+      <p class="text-center">We are transparent with our process from consultation to deployment.</p>
     </div>
-    <div class="w-100 row d-flex justify-content-center align-items center pb-5">
+    <div class="w-100 d-flex justify-content-center align-items center pb-5">
       <div class="timeline-wrap bg-white box-shadowed col-12 col-md-9 d-flex p-5 my-5">
         <div class="timeline bg-grey mx-5">
           
@@ -481,8 +484,8 @@
     <div class="w-100 row d-flex justify-content-center pt-5 mx-0">
       <h2 class="page-heading">Our Portfolio</h2>
     </div>
-    <div class="w-100 row d-flex justify-content-center align-items-center pb-5">
-      <div class="col-12 col-md-9 row bg-white box-shadowed p-5 my-5">
+    <div class="w-100 d-flex justify-content-center align-items-center pb-5">
+      <div class="col-12 col-md-9 row bg-white box-shadowed m-0 p-5 my-5">
         <div class="col-12 col-md-4">
           <img height="172" class="img-fluid rounded" src="./images/portfolio/EarlyCode.png" alt="Early Code"></img>
           <p class="text-grey d-flex justify-content-center">Early Code</p>
@@ -530,31 +533,31 @@
       <div class="w-100 row d-flex justify-content-center pt-5 mx-0">
         <h2 class="page-heading">Contact Us</h2>
       </div>
-      <div class="w-100 row d-flex justify-content-center align-items-center">
-        <div class="col-12 col-md-9 justify-content-center row box-shadowed p-4 my-5">
-          <form>
+      <div class="w-100 d-flex justify-content-center align-items-center">
+        <div class="col-12 col-md-9 justify-content-center row box-shadowed pt-4 my-5">
+          <form class="col-8 pt-3">
               <div class="col-12 flex-wrap mb-5 body-text">
-                <div class="row flex-wrap flex-sm-nowrap">
+                <div class="row flex-wrap flex-sm-nowrap d-flex justify-content-center">
                   <div class="form-group col-12 col-sm-6">
                     <!-- <label>Name</label> -->
-                    <input name="name" placeholder="Name" type="text" class="form-text-input">
+                    <input name="name" placeholder="Name" type="text" class="form-text-input col-12">
                   </div>
 
                   <div class="form-group col-12 col-sm-6">
                     <!-- <label>Email</label> -->
-                    <input name="email" placeholder="Email" type="text" class="form-text-input">
+                    <input name="email" placeholder="Email" type="text" class="form-text-input col-12">
                   </div>
                 </div>
 
                 <div class="row flex-wrap flex-sm-nowrap">
                   <div class="form-group col-12 col-sm-6">
                     <!-- <label>Phone Number</label> -->
-                    <input name="phone" placeholder="Phone Number" type="tel" class="form-text-input">
+                    <input name="phone" placeholder="Phone Number" type="tel" class="form-text-input col-12">
                   </div>
 
                   <div class="form-group col-12 col-sm-6">
                     <!-- <label>Company</label> -->
-                    <input name="company" placeholder="company" type="text" class="form-text-input">
+                    <input name="company" placeholder="company" type="text" class="form-text-input col-12">
                   </div>
                 </div>
 
@@ -572,14 +575,15 @@
                   <textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="3" style="resize: none;"></textarea>
                 </div>
 
+
+                <div class="col-12 flex-wrap mb-5 body-text text-center">
+                  <!-- <div class="col-auto ml-3"> -->
+                    <!-- Submit -->
+                    <a class="btn btn-primary" href="#" role="button">Submit</a>
+                  <!-- </div> -->
+                </div> <!-- / .row -->
               </div> <!-- / .row -->
 
-              <div class="row mt-0">
-                <!-- <div class="col-auto ml-3"> -->
-                  <!-- Submit -->
-                  <a class="btn btn-primary" href="#" role="button">Submit</a>
-                <!-- </div> -->
-              </div> <!-- / .row -->
             </form>
 
         </div>
