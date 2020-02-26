@@ -353,6 +353,11 @@
       .fa:hover {
         color: #9900FF;
       }
+      #myCanvas {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
 
     </style>
   </head>
@@ -362,6 +367,8 @@
 <body class="bg-main">
   <!-- Navigation -->
 
+  <canvas id="myCanvas" style="border:1px solid #d3d3d3;">
+    Your browser does not support the HTML5 canvas tag.</canvas>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
     
@@ -636,8 +643,14 @@
       proc.removeEventListener('mouseover', addAnim);
       who.removeEventListener('mouseover', addAnim);
     };
-
     // listen to mouseover for the container
+    for(let i = 0; i< 100; i++){ 
+      var c = document.getElementById("myCanvas");
+      var ctx = c.getContext("2d");
+      ctx.beginPath();
+      ctx.arc(95,50,40,0,2*Math.PI);
+      ctx.stroke();
+    }
   </script>
 </body>
 </html>
