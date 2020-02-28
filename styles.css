@@ -66,3 +66,6 @@ canvas{
   p{
     z-index: 3;
   }
+  img{
+    z-index: 4;
+  }
