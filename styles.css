@@ -21,6 +21,7 @@ b {
 }
 .box-shadowed{
   box-shadow: 0px 1px 10px #00000029;
+  z-index: 3
 }
 /*front page styling */
 /* INPUT */
@@ -43,9 +44,6 @@ a{
 }
 form{
   z-index: 2;
-}
-.box-shadowed{
-  z-index: 90;
 }
 canvas{ 
     display: block; 
@@ -201,6 +199,9 @@ canvas{
           border-radius: 5px 15px;
           margin: 1.5rem;
        }
+       .btn.btn-primary:active{
+         background-color: #9900FF !important;
+       }
 
        @media screen and (max-width: 800px){
             .btn.btn-primary {
@@ -230,7 +231,7 @@ canvas{
           margin: 1.5rem;
           justify-content: right;
        }
-
+      
        @media screen and (max-width: 800px){
             .btn.btn-secondary {
               background-color: #9900FF;
@@ -250,7 +251,10 @@ canvas{
           box-shadow: #9900FF;
           color: #707070;
        }
-
+       .btn.btn-secondary:active{
+        background-color: #ffffff !important;
+        color: #707070 !important;
+      }
        .buttonGroup {
          width: 100%;
          margin-left: 30%;
