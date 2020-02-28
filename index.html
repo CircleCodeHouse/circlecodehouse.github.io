@@ -39,6 +39,18 @@
    <style amp-custom>
   
 
+  .montserrat {
+    font-family: "Montserrat";
+    font-size: 18px;
+  }
+
+  @media screen and (max-width: 800px) {
+      .montserrat {
+        font-family: "Montserrat";
+        font-size: 15px;
+      }
+  }
+
   /*Nav and Header*/
 
 
@@ -270,9 +282,7 @@
         }
       }
 
-      #about-us {
-        margin-bottom: 4rem;
-      }
+   
 
       #doubleColumn {
         width: 40%;
@@ -378,6 +388,7 @@
         #footer {
           height: 250px;
           position: relative;
+          z-index: 100;
         }
       }
 
@@ -491,16 +502,16 @@
       <div class="w-100 row d-flex justify-content-center pt-5 mx-0">
         <h2 class="page-heading">About Us</h2>
       </div>
-      <div class="w-100 row d-flex justify-content-center my-3 mx-0 aboutUsDescription">
+      <div class="w-100 row d-flex justify-content-center my-3 mx-0 aboutUsDescription montserrat">
         <p>Circle Code House is an answer to several needs that we’ve heard <br class="break1"/> from startups, enterprises, hiring partners and entrepreneurs.      
       </div>
       
       <div class="container" id="doubleColumn">
           <div class="row">
-            <div class="col-12 col-md halfCol">
+            <div class="col-12 col-md halfCol montserrat">
                 If you need short-term <br> developers, we can handle <br> all of the paperwork <br> necessary. Just give us the <br> skills and timeframe and <br> we will match you with the<br>  perfect candidate.
             </div>
-            <div class="col-12 col-md halfCol">
+            <div class="col-12 col-md halfCol montserrat">
                 If you want to hand<br> the project over to our team,<br> we'll assemble a team <br>with a senior developer<br> leading without costing <br>an arm and a leg.
             </div>
           </div>
@@ -515,8 +526,8 @@
       <div class="purpleTriangle3"></div>
 
     <div class="d-flex flex-column align-items-center w-10 pt-5">
-      <h2>The Process</h2>
-      <p class="text-center">We are transparent with our process from consultation to deployment.</p>
+      <h2 class="page-heading">The Process</h2>
+      <p class="text-center montserrat">We are transparent with our process from consultation to deployment.</p>
     </div>
 
     <div class="w-100 d-flex justify-content-center align-items center pb-5">
@@ -558,7 +569,7 @@
       <h2 class="page-heading">Who Are We?</h2>
     </div>
     <div class="w-100 row d-flex justify-content-center my-3 py-5 mx-0">
-      <p class="col-12 col-md-5">Austin Coding Academy graduates have completed an almost year-long program that teaches <b>Full-Stack JavaScript.</b> They have backgrounds ranging from teaching, project management, and tech support to operations and digital marketing. Most held full-time jobs while learning development and building <b>real-world projects.</b> Our grads are <b>hungry</b> to prove their skills and grit at a company like yours.</p>      
+      <p class="col-12 col-md-5 montserrat">Austin Coding Academy graduates have completed an almost year-long program that teaches <b>Full-Stack JavaScript.</b> They have backgrounds ranging from teaching, project management, and tech support to operations and digital marketing. Most held full-time jobs while learning development and building <b>real-world projects.</b> Our grads are <b>hungry</b> to prove their skills and grit at a company like yours.</p>      
     </div>
   </section>
 
@@ -601,17 +612,17 @@
         <div class="col-12 col-md-4 d-flex flex-column align-items-center">
           <img height="172" class="img-fluid rounded" src="./images/team/DanMain.png" alt="Dan"></img>
           <h3 class="text-grey">Dan Cummings</h3>
-          <p class="text-grey d-flex justify-content-center">Managing Director</p>
+          <p class="text-grey d-flex justify-content-center montserrat">Managing Director</p>
         </div>
         <div class="col-12 col-md-4 d-flex flex-column align-items-center">
           <img height="172" class="img-fluid rounded" src="./images/team/EmilioMain.png" alt="Emilio"></img>
           <h3 class="text-grey">Emilio Sanchez</h3>
-          <p class="text-grey d-flex justify-content-center">Lead Developer</p>
+          <p class="text-grey d-flex justify-content-center montserrat">Lead Developer</p>
         </div>
         <div class="col-12 col-md-4 d-flex flex-column align-items-center">
           <img height="172" class="img-fluid rounded" src="./images/team/SkyMain.png" alt="Sky"></img>
           <h3 class="text-grey">Sky Mendes</h3>
-          <p class="text-grey d-flex justify-content-center">Lead Designer</p>
+          <p class="text-grey d-flex justify-content-center montserrat">Lead Designer</p>
         </div>
       </div>
     </div>
@@ -680,7 +691,7 @@
       </div>
 
       <div class="w-100 row d-flex justify-content-center my-3 py-5 mx-0 text-center">
-          <p>Question can’t wait? Reach out: <br>Dan Cumming<br> Managing Director<br> 512-677-7925<br> dan@circlecodehouse.com 
+          <p class="montserrat">Question can’t wait? Reach out: <br>Dan Cumming<br> Managing Director<br> 512-677-7925<br> dan@circlecodehouse.com 
         </div>
     </section>
   
@@ -693,16 +704,16 @@
 
     	<div class='row no-gutters text-center' id="topFooter">
 
-          <div class='col-12 col-md-4 order-md-3 order-1 rightFooter d'>
+          <div class='col-12 col-md-4 order-md-3 order-1 rightFooter d montserrat'>
               <i class="fa fa-twitter" aria-hidden="true"></i>
               <i class="fa fa-instagram" aria-hidden="true"></i>
               <i class="fa fa-facebook" aria-hidden="true"></i>
           </div>
-          <div class='col-12 col-md-4 order-md-1 order-2 d' id="leftFooter">
+          <div class='col-12 col-md-4 order-md-1 order-2 d montserrat' id="leftFooter">
                 Circle Code House, LLC<br>
               1335 E. Whitestone Blvd W-100 Cedar Park, TX 78613
           </div>
-          <div class='col-12 col-md-4 order-md-2 order-3 rightFooter d'>
+          <div class='col-12 col-md-4 order-md-2 order-3 rightFooter d montserrat'>
             Copyright 2020
           </div>
           
