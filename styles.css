@@ -44,6 +44,9 @@ a{
 form{
   z-index: 2;
 }
+.box-shadowed{
+  z-index: 90;
+}
 canvas{ 
     display: block; 
     vertical-align: bottom; 
@@ -60,3 +63,6 @@ canvas{
     background-size: cover; 
     background-position: 50% 50%; 
   } 
+  p{
+    z-index: 3;
+  }
