@@ -14,7 +14,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
 
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="https://use.typekit.net/aji6ikr.css">
     <link rel="stylesheet" type="text/css" href="/timeline.css" />
     <link rel="stylesheet" type="text/css" href="/styles.css" />
@@ -29,6 +29,7 @@
         ]
       }
     </script>
+    
     <script src="https://use.fontawesome.com/22a8fa2d6f.js"></script>
     
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -424,7 +425,7 @@
       .fa:hover {
         color: #9900FF;
       }
-      #myCanvas {
+      canvas {
         position: absolute;
         width: 100%;
         height: 100%;
@@ -440,7 +441,7 @@
 
   <canvas id="myCanvas" style="border:1px solid #d3d3d3;">
     Your browser does not support the HTML5 canvas tag.</canvas>
-
+    <div id="particles-js"></div> <!-- stats - count particles --> <div class="count-particles"> <span class="js-count-particles">--</span> particles </div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
   
           <a class="navbar-brand" href="#">
@@ -652,6 +653,7 @@
                     <select name="how_can_we_help_" type="select" class="form-control">
                       <option value="staffing" label="Staffing">Staffing</option>
                     </select>
+                    <!-- staffing, projects, training, other -->
                   </div>
                 </div>
 
@@ -703,8 +705,9 @@
           
         </div>
   </section>
-
-  <script>
+<!-- particles.js container --> <div id="particles-js"></div> <!-- stats - count particles --> <div class="count-particles"> <span class="js-count-particles">--</span> particles </div> <!-- particles.js lib - https://github.com/VincentGarreau/particles.js --> <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+<script src="particles.js"></script> 
+<script>
     var about = document.getElementById('about-us')
     var proc = document.getElementById('process');
     var who = document.getElementById('who-we-are')
@@ -724,10 +727,12 @@
     // listen to mouseover for the container
     for(let i = 0; i< 100; i++){ 
       var c = document.getElementById("myCanvas");
-      var ctx = c.getContext("2d");
+      let l = document.createElement('canvas')
+      var ctx = l.getContext("2d");
       ctx.beginPath();
       ctx.arc(95,50,40,0,2*Math.PI);
       ctx.stroke();
+      c.appendChild(l)
     }
   </script>
 </body>
