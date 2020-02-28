@@ -38,6 +38,12 @@ body{
   margin:0; 
   font:normal 75% Arial, Helvetica, sans-serif; 
 } 
+a{
+  z-index: 2;
+}
+form{
+  z-index: 2;
+}
 canvas{ 
     display: block; 
     vertical-align: bottom; 
