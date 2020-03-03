@@ -90,8 +90,15 @@ canvas{
 
   /*Nav and Header*/
 
+  @media screen and (max-width: 800px) {
+    #bottomNavLink {
+      margin-bottom: 100vh;
+      overflow: hidden
+    }
+  
+}
 
-
+  
     @media screen and (min-width: 800px) {
         .box-shadowed {
           height: 500px;
@@ -356,6 +363,13 @@ canvas{
         color: #4E4E4E;
       }
 
+      @media screen and (max-width: 800px) {
+        .page-heading {
+          font-size: 25px;
+          margin-bottom: -1rem;
+        }
+      }
+
       .halfCol {
         margin-bottom: 2rem;
       }
@@ -499,7 +513,23 @@ canvas{
       }
 
 
-/* 
-      .shadow.navbar.navbar-expand-lg.navbar-light.bg-light {
-          height: 100% !important;
-      } */
+
+      /* @media screen and (max-width: 800px) {
+          .navbar.navbar-expand-lg.navbar-light.bg-light {
+            background-color: #4E4E4E !important;
+    
+          }
+       }
+
+       @media screen and (min-width: 800px) {
+        .navbar.navbar-expand-lg.navbar-light.bg-light {
+          background-color: #4E4E4E !important;
+  
+        }
+     } */
+
+    
+      .navbar-collapse.text-center.collapse.show {
+        height: 100vh !important;
+        overflow: hidden"
+      }
