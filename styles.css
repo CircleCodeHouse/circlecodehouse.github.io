@@ -191,7 +191,7 @@ canvas{
 
        .btn.btn-primary {
           background-color: #ffffff;
-          border: 2px solid #9900FF;
+          border: 2px solid #C67CF8;
           box-shadow: #9900FF;
           color: #707070;
           font: Bold 40px/45px Henriette;
@@ -274,7 +274,7 @@ canvas{
         height: auto; 
         border-top: 420px solid transparent;
         border-bottom: 420px solid transparent; 
-        border-left: 490px solid #9900FF;
+        border-left: 490px solid #C67CF8;
         position: absolute;
       }
 
@@ -282,7 +282,7 @@ canvas{
         .purpleTriangle{
             border-top: 120px solid transparent;
             border-bottom: 120px solid transparent; 
-            border-left: 190px solid #9900FF;
+            border-left: 190px solid #C67CF8;
          }
       }
 
@@ -352,7 +352,7 @@ canvas{
         height: auto; 
         border-top: 400px solid transparent;
         border-bottom: 420px solid transparent; 
-        border-left: 490px solid #9900FF;
+        border-left: 490px solid #C67CF8;
         position: absolute;
         margin-left: 70.5%;
         transform: rotate(180deg);
@@ -382,7 +382,7 @@ canvas{
         height: auto; 
         border-top: 420px solid transparent;
         border-bottom: 420px solid transparent; 
-        border-left: 490px solid #9900FF;
+        border-left: 490px solid #C67CF8;
         position: absolute;
      }
 
@@ -390,7 +390,7 @@ canvas{
         .purpleTriangle2 {
             border-top: 200px solid transparent;
             border-bottom: 200px solid transparent; 
-            border-left: 200px solid #9900FF;
+            border-left: 200px solid #C67CF8;
             height: 350px;
             margin-top: 200px;
          }
@@ -400,7 +400,7 @@ canvas{
         .purpleTriangle2 {
             border-top: 200px solid transparent;
             border-bottom: 200px solid transparent; 
-            border-left: 200px solid #9900FF;
+            border-left: 200px solid #C67CF8;
             height: 495px;
             margin-top: 200px;
          }
@@ -479,3 +479,9 @@ canvas{
         width: 100%;
         height: 100%;
       }
+
+
+/* 
+      .shadow.navbar.navbar-expand-lg.navbar-light.bg-light {
+          height: 100% !important;
+      } */
