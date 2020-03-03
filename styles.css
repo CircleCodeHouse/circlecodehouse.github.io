@@ -185,15 +185,27 @@ canvas{
 
        .display-4 {
           font: Bold 60px/68px Henriette;
-          color: #707070;
+          color: #4E4E4E;
        }
 
        @media screen and (max-width: 800px){
           .display-4 {
             font: Bold 25px/25px Henriette;
-            color: #707070;
+            color: #4E4E4E;
           }
        }
+
+
+        .lead {
+            color: #707070;
+        }
+
+        @media screen and (max-width: 800px){
+          .lead {
+            font-size: 14px;
+          }
+       }
+
 
        .btn.btn-primary {
           background-color: #ffffff;
@@ -205,7 +217,7 @@ canvas{
           margin: 1.5rem;
        }
        .btn.btn-primary:active{
-         background-color: #9900FF !important;
+         background-color: #C67CF8 !important;
        }
 
        @media screen and (max-width: 800px){
@@ -220,10 +232,10 @@ canvas{
        }
 
        .btn.btn-primary:hover {
-          background-color: #9900FF;
-          border-color: #9900FF;
+          background-color: #C67CF8;
+          border-color: #C67CF8;
           color: #ffffff;
-          box-shadow: #9900FF;
+          box-shadow: #C67CF8;
        }
 
        .btn.btn-secondary {
@@ -341,7 +353,7 @@ canvas{
       .page-heading {
         font: Bold 50px/57px Henriette;
         letter-spacing: 0;
-        color: #707070;
+        color: #4E4E4E;
       }
 
       .halfCol {
