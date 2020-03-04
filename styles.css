@@ -90,20 +90,20 @@ canvas{
 
   /*Nav and Header*/
 
+  @media screen and (max-width: 800px) {
+    #bottomNavLink {
+      margin-bottom: 100vh;
+      overflow: hidden
+    }
+  
+}
 
-
+  
     @media screen and (min-width: 800px) {
         .box-shadowed {
           height: 500px;
         }
     }
-
-
-      @media screen and (max-width: 800px) {
-        .box-shadowed {
-           height: 500px;
-        }
-     } 
 
       @media screen and (min-width: 1200px) {
          #headerLogo {
@@ -130,7 +130,7 @@ canvas{
         .jumbotron {
             height: 200px;
             width: 75%;
-            margin-top: 20px;
+            margin-top: 50px;
             box-shadow: 0px 1px 10px #00000029;
             z-index: 30 !important;
             background-color: #ffffff;
@@ -185,15 +185,27 @@ canvas{
 
        .display-4 {
           font: Bold 60px/68px Henriette;
-          color: #707070;
+          color: #4E4E4E;
        }
 
        @media screen and (max-width: 800px){
           .display-4 {
             font: Bold 25px/25px Henriette;
-            color: #707070;
+            color: #4E4E4E;
           }
        }
+
+
+        .lead {
+            color: #707070;
+        }
+
+        @media screen and (max-width: 800px){
+          .lead {
+            font-size: 14px;
+          }
+       }
+
 
        .btn.btn-primary {
           background-color: #ffffff;
@@ -205,7 +217,7 @@ canvas{
           margin: 1.5rem;
        }
        .btn.btn-primary:active{
-         background-color: #9900FF !important;
+         background-color: #C67CF8 !important;
        }
 
        @media screen and (max-width: 800px){
@@ -220,10 +232,10 @@ canvas{
        }
 
        .btn.btn-primary:hover {
-          background-color: #9900FF;
-          border-color: #9900FF;
+          background-color: #C67CF8;
+          border-color: #C67CF8;
           color: #ffffff;
-          box-shadow: #9900FF;
+          box-shadow: #C67CF8;
        }
 
        .btn.btn-secondary {
@@ -286,8 +298,8 @@ canvas{
 
       @media screen and (max-width: 800px) {
         .purpleTriangle{
-            border-top: 120px solid transparent;
-            border-bottom: 120px solid transparent; 
+            border-top: 150px solid transparent;
+            border-bottom: 150px solid transparent; 
             border-left: 190px solid #C67CF8;
          }
       }
@@ -306,6 +318,7 @@ canvas{
         display: flex;
         height: 300px;
         width: 100%;
+        margin-top: -40px !important;
         }
       }
 
@@ -341,7 +354,14 @@ canvas{
       .page-heading {
         font: Bold 50px/57px Henriette;
         letter-spacing: 0;
-        color: #707070;
+        color: #4E4E4E;
+      }
+
+      @media screen and (max-width: 800px) {
+        .page-heading {
+          font-size: 25px;
+          margin-bottom: -1rem;
+        }
       }
 
       .halfCol {
@@ -355,8 +375,8 @@ canvas{
 
 
       .purpleTriangle3 {
-        height: auto; 
-        border-top: 400px solid transparent;
+        height: auto;
+        border-top: 420px solid transparent;
         border-bottom: 420px solid transparent; 
         border-left: 490px solid #C67CF8;
         position: absolute;
@@ -366,8 +386,12 @@ canvas{
 
       @media screen and (max-width: 800px) {
         .purpleTriangle3 {
-          height: auto;
-           margin-top: 200px;
+          border-top: 420px solid transparent;
+          border-bottom: 420px solid transparent; 
+          border-left: 490px solid #C67CF8;
+          position: absolute;
+          height: 1100px !important;
+          margin-top: -80px;
          }
       }
 
@@ -408,7 +432,7 @@ canvas{
             border-bottom: 200px solid transparent; 
             border-left: 200px solid #C67CF8;
             height: 495px;
-            margin-top: 200px;
+            margin-top: 170px;
          }
       }
 
@@ -487,7 +511,23 @@ canvas{
       }
 
 
-/* 
-      .shadow.navbar.navbar-expand-lg.navbar-light.bg-light {
-          height: 100% !important;
-      } */
+
+      /* @media screen and (max-width: 800px) {
+          .navbar.navbar-expand-lg.navbar-light.bg-light {
+            background-color: #4E4E4E !important;
+    
+          }
+       }
+
+       @media screen and (min-width: 800px) {
+        .navbar.navbar-expand-lg.navbar-light.bg-light {
+          background-color: #4E4E4E !important;
+  
+        }
+     } */
+
+    
+      .navbar-collapse.text-center.collapse.show {
+        height: 100vh !important;
+        overflow: hidden"
+      }
