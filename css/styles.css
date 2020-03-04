@@ -355,6 +355,7 @@ canvas{
         font: Bold 50px/57px Henriette;
         letter-spacing: 0;
         color: #4E4E4E;
+        z-index: 30
       }
 
       @media screen and (max-width: 800px) {
