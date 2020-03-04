@@ -105,13 +105,6 @@ canvas{
         }
     }
 
-
-      @media screen and (max-width: 800px) {
-        .box-shadowed {
-           height: 500px;
-        }
-     } 
-
       @media screen and (min-width: 1200px) {
          #headerLogo {
           margin-left: 80%;
@@ -435,7 +428,7 @@ canvas{
             border-bottom: 200px solid transparent; 
             border-left: 200px solid #C67CF8;
             height: 495px;
-            margin-top: 200px;
+            margin-top: 160px;
          }
       }
 
