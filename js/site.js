@@ -5,7 +5,6 @@ $(document).ready(function() {
     about.addEventListener('mouseover', addAnim);
     proc.addEventListener('mouseover', addAnim);
     who.addEventListener('mouseover', addAnim);
-    console.log("test");
     function addAnim() {
       var text = document.getElementsByClassName('timeline-text');
       for(let i = 0; i<text.length; i++){
