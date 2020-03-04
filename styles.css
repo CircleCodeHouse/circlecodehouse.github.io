@@ -375,8 +375,8 @@ canvas{
 
 
       .purpleTriangle3 {
-        height: auto; 
-        border-top: 400px solid transparent;
+        height: auto;
+        border-top: 420px solid transparent;
         border-bottom: 420px solid transparent; 
         border-left: 490px solid #C67CF8;
         position: absolute;
@@ -386,8 +386,12 @@ canvas{
 
       @media screen and (max-width: 800px) {
         .purpleTriangle3 {
-          height: auto;
-           margin-top: 200px;
+          border-top: 420px solid transparent;
+          border-bottom: 420px solid transparent; 
+          border-left: 490px solid #C67CF8;
+          position: absolute;
+          height: 1100px !important;
+          margin-top: -80px;
          }
       }
 
@@ -428,7 +432,7 @@ canvas{
             border-bottom: 200px solid transparent; 
             border-left: 200px solid #C67CF8;
             height: 495px;
-            margin-top: 160px;
+            margin-top: 170px;
          }
       }
 
