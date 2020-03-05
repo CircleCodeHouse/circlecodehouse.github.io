@@ -545,5 +545,9 @@ canvas{
     
       .navbar-collapse.text-center.collapse.show {
         height: 100vh !important;
-        overflow: hidden"
+        overflow: hidden;
       }
+/* 
+      .navbar-collapse.text-center.collapse.show  {
+        background-color: red !important;
+      } */
