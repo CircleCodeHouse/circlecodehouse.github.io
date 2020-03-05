@@ -356,6 +356,7 @@ canvas{
       /*Process*/
       #process {
         height: 840px;
+        
       }
 
 
@@ -372,7 +373,7 @@ canvas{
       @media screen and (max-width: 800px) {
         .purpleTriangle3 {
           height: auto;
-           margin-top: 200px;
+          margin-top: 200px;
          }
       }
 
