@@ -114,6 +114,7 @@ canvas{
      @media screen and (max-width: 800px) {
           #headerLogo {
            width: 60%;
+           max-width: 250px;
          }
      }
     
@@ -223,11 +224,12 @@ canvas{
        @media screen and (max-width: 800px){
             .btn.btn-primary {
               background-color: #ffffff;
-              border: 2px solid #9900FF;
+              border: 1px solid #9900FF;
               box-shadow: #9900FF;
               color: #707070;
               font: Bold 14px/15px Henriette;
-          
+              margin-right: -20px;
+              margin-left: 70px;
           }
        }
 
@@ -253,7 +255,7 @@ canvas{
             .btn.btn-secondary {
               background-color: #9900FF;
               border-color: #9900FF;
-              border: 2px solid #9900FF;
+              border: 1px solid #9900FF;
               box-shadow: #9900FF;
               font: Bold 14px/15px Henriette;
               border-radius: 5px 15px;
@@ -280,14 +282,23 @@ canvas{
           height: auto;
        }
 
-       @media screen and (max-width: 800px){
+       @media screen and (min-width: 360px) and (max-width: 800px){
         .buttonGroup {
           width: 180%;
           margin-left: 0%;
           margin-top: 10%;
           height: auto;
         }
-    }
+      }
+
+        @media screen and (max-width: 360px){
+          .buttonGroup {
+            width: 180%;
+            margin-left: -40px;
+            margin-top: 10%;
+            height: auto;
+          }
+      }
 
 
       .purpleTriangle {
@@ -376,8 +387,8 @@ canvas{
       /*Process*/
       #process {
         height: 840px;
-        
       }
+
 
       .purpleTriangle3 {
         height: auto;
