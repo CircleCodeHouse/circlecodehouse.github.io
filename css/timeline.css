@@ -12,15 +12,15 @@
     height: 25rem;
   }
   .timeline-wrap .timeline {
-    /* display: flex;
+    /* display: flex; */
     align-items: center;
-    justify-content: center; */
+    justify-content: center;
     height: 4px;
     width: 100%;
     border-radius: 2px;
     position: relative;
     margin: auto;
-    display: block;
+    /* display: block; */
     margin-top: 10%;
     margin-right: 40px;
     flex-wrap: wrap;
@@ -129,14 +129,14 @@
   @media(max-width: 992px){
     .timeline-wrap{
       height: 80vh;
-      padding:0px !important;
+      /* padding:0px !important; */
     }
     .timeline-wrap .timeline{
       padding: 0;
       display: inline-block;
       transform: rotate(90deg) translateX(100%);
       position: absolute;
-      top: -35%;
+      top: -15%;
       left: -45%;
     
     }
@@ -197,8 +197,12 @@
       margin-right: 20px
     }
 
+    .pad{
+      padding: 5em;
+    }
+
   }
 
   .pad{
-    padding :5em;
+    padding: 5em;
   }
