@@ -130,7 +130,7 @@ canvas{
   .navbar-toggler.collapsed .bottom-bar {
     transform: rotate(0);
   }
-  
+
   @media screen and (max-width: 800px) {
     #bottomNavLink {
       margin-bottom: 100vh;
@@ -218,11 +218,12 @@ canvas{
 
        .navbar.navbar-expand-lg.navbar-light.bg-light{
           width: 100% !important;
-          background-color: #ffffff !important;
           position: fixed;
           /* top: 0; */
           z-index: 50;
        }
+
+
      
 
        .display-4 {
